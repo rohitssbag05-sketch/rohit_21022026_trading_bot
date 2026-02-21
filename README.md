@@ -25,16 +25,27 @@ This project demonstrates clean architecture, input validation, structured loggi
 
 trading_bot/
 ├── bot/
+
 │ ├── client.py # Binance Futures client wrapper
+
 │ ├── orders.py # Order execution logic
+
 │ ├── validators.py # Input + exchange validation
+
 │ └── logging_config.py # Logging configuration
+
 ├── logs/
+
 │ └── trading.log # Execution logs
+
 ├── cli.py # CLI entry point
+
 ├── .env # API credentials (not committed)
+
 ├── requirements.txt
+
 └── README.md
+
 
 
 ---
