@@ -2,7 +2,7 @@
 
 A structured Python CLI application for placing orders on Binance USDT-M Futures Testnet.
 
-This project demonstrates clean architecture, input validation, logging, and error handling while interacting with the Binance Futures Testnet API.
+This project demonstrates clean architecture, input validation, structured logging, and robust error handling while interacting with the Binance Futures Testnet API.
 
 ---
 
@@ -13,11 +13,10 @@ This project demonstrates clean architecture, input validation, logging, and err
 - Place **STOP (Stop-Limit / Conditional)** orders (Bonus)
 - Supports both **BUY** and **SELL**
 - CLI-based user input
+- Exchange rule validation (minimum notional check)
 - Structured modular architecture
-- Input validation before API calls
-- Exchange rule validation (minimum notional)
-- Detailed logging to file
-- Exception handling for API and network errors
+- Centralized logging of API requests and responses
+- Graceful exception handling
 
 ---
 
@@ -25,16 +24,13 @@ This project demonstrates clean architecture, input validation, logging, and err
 
 
 trading_bot/
-│
 ├── bot/
-│ ├── client.py # Binance client wrapper
+│ ├── client.py # Binance Futures client wrapper
 │ ├── orders.py # Order execution logic
-│ ├── validators.py # Input and exchange validation
-│ └── logging_config.py
-│
+│ ├── validators.py # Input + exchange validation
+│ └── logging_config.py # Logging configuration
 ├── logs/
-│ └── trading.log
-│
+│ └── trading.log # Execution logs
 ├── cli.py # CLI entry point
 ├── .env # API credentials (not committed)
 ├── requirements.txt
@@ -47,149 +43,144 @@ trading_bot/
 
 ### 1️⃣ Clone Repository
 
-
+```bash
 git clone <your-repo-url>
 cd trading_bot
+2️⃣ Create Virtual Environment
 
-
-### 2️⃣ Create Virtual Environment
-
+Windows:
 
 python -m venv venv
-source venv/bin/activate # macOS/Linux
-venv\Scripts\activate # Windows
+venv\Scripts\activate
 
+macOS/Linux:
 
-### 3️⃣ Install Dependencies
-
-
+python -m venv venv
+source venv/bin/activate
+3️⃣ Install Dependencies
 pip install -r requirements.txt
+4️⃣ Create .env File
 
-
-### 4️⃣ Create `.env` File
-
-Create a `.env` file in the root directory:
-
+Create a .env file in the root directory:
 
 BINANCE_API_KEY=your_testnet_api_key
 BINANCE_API_SECRET=your_testnet_secret
 
+⚠️ API keys must be generated from:
 
-> API keys must be generated from:  
-> https://testnet.binancefuture.com
+https://testnet.binancefuture.com
 
 Ensure:
-- Futures trading permission enabled
-- No IP restriction (for testing)
 
----
+Futures trading permission is enabled
 
-## ▶️ How to Run
+No IP restrictions (for testing)
 
-### MARKET Order
-
-
+▶️ Usage Examples
+✅ MARKET Order
 python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.002
-
-
----
-
-### LIMIT Order
-
-
+✅ LIMIT Order
 python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.002 --price 70000
-
-
----
-
-### STOP (Conditional) Order (Bonus)
-
-
+✅ STOP (Conditional) Order (Bonus)
 python cli.py --symbol BTCUSDT --side SELL --type STOP --quantity 0.002 --price 63000 --stop_price 64000
 
+Explanation:
 
----
+stop_price = trigger price
 
-## 📋 Example Output
+price = limit price placed after trigger
 
-
+📋 Example Outputs
+MARKET / LIMIT Response
 ===== ORDER REQUEST =====
 Symbol: BTCUSDT
-Side: SELL
-Type: LIMIT
+Side: BUY
+Type: MARKET
 Quantity: 0.002
-Price: 70000
 
 ===== ORDER RESPONSE =====
 Order ID: 123456789
+Status: FILLED
+Executed Qty: 0.002
+Avg Price: 65432.10
+
+✅ Order executed successfully
+STOP (Conditional) Response
+===== ORDER REQUEST =====
+Symbol: BTCUSDT
+Side: SELL
+Type: STOP
+Quantity: 0.002
+Price: 63000
+Stop Price: 64000
+
+===== ORDER RESPONSE =====
+Order ID: 1000000015704255
 Status: NEW
-Executed Qty: 0.000
-Avg Price: N/A
+Executed Qty: 0.002
+Avg Price: N/A (Not triggered yet)
 
 ✅ Order executed successfully
 
+Note:
+STOP orders return algoId and algoStatus instead of standard orderId and status.
+The application handles both response structures appropriately.
 
----
+📝 Logging
 
-## 📝 Logging
-
-All API requests, responses, and errors are logged to:
-
+All API interactions are logged to:
 
 logs/trading.log
 
+Logs include:
 
-Logging includes:
-- Order parameters
-- Raw exchange response
-- API errors
-- Unexpected exceptions
+Order parameters sent to Binance
 
----
+Raw API responses
 
-## 🧠 Design Decisions
+API errors
 
-- Separation of concerns (CLI / Business Logic / Client)
-- Centralized logging configuration
-- Validation before API calls
-- Exchange rule validation (minimum notional requirement)
-- Clean and extensible structure for adding new order types
+Unexpected exceptions
 
----
+Log format:
 
-## ⚠️ Assumptions
+Timestamp | Level | Logger | Message
+🧠 Design Decisions
 
-- USDT-M Futures only
-- Binance Futures Testnet only
-- Cross margin mode (default)
-- Leverage not explicitly configured
+Clear separation of concerns:
 
----
+CLI Layer
 
-## 📦 Dependencies
+Business Logic Layer
 
-- python-binance
-- python-dotenv
+API Client Layer
 
----
+Validation before API calls
 
-## ✅ Bonus Implemented
+Exchange minimum notional validation (>= 100 USDT)
 
-- Added STOP (Stop-Limit / Conditional) order support
-- Extended validation for conditional orders
-- Handled different response structures (standard vs conditional orders)
+Structured logging for debugging and traceability
 
----
+Extensible architecture for adding new order types
 
-## 📧 Submission
+⚠️ Assumptions
 
-Includes:
-- Source code
-- README
-- requirements.txt
-- Log files demonstrating:
-  - One MARKET order
-  - One LIMIT order
-  - One STOP order (bonus)
+USDT-M Futures only
 
----
+Binance Futures Testnet only
+
+Default margin mode
+
+Leverage not explicitly configured
+
+Minimum notional requirement enforced (>= 100 USDT)
+
+📦 Dependencies
+
+python-binance
+
+python-dotenv
+
+Install via:
+
+pip install -r requirements.txt
