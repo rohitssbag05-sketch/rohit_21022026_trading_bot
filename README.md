@@ -22,29 +22,20 @@ This project demonstrates clean architecture, input validation, structured loggi
 
 ## 🏗 Project Structure
 
-
+```
 trading_bot/
 ├── bot/
-
 │ ├── client.py # Binance Futures client wrapper
-
 │ ├── orders.py # Order execution logic
-
 │ ├── validators.py # Input + exchange validation
-
 │ └── logging_config.py # Logging configuration
-
 ├── logs/
-
 │ └── trading.log # Execution logs
-
 ├── cli.py # CLI entry point
-
 ├── .env # API credentials (not committed)
-
 ├── requirements.txt
-
 └── README.md
+```
 
 
 
@@ -54,33 +45,38 @@ trading_bot/
 
 ### 1️⃣ Clone Repository
 
-```bash
+```
 git clone <your-repo-url>
 cd trading_bot
+```
+
 2️⃣ Create Virtual Environment
 
 Windows:
-
+```
 python -m venv venv
 venv\Scripts\activate
-
+```
 macOS/Linux:
-
+```
 python -m venv venv
 source venv/bin/activate
+```
 3️⃣ Install Dependencies
+```
 pip install -r requirements.txt
+```
 4️⃣ Create .env File
 
 Create a .env file in the root directory:
-
+```
 BINANCE_API_KEY=your_testnet_api_key
 BINANCE_API_SECRET=your_testnet_secret
-
+```
 ⚠️ API keys must be generated from:
-
+```
 https://testnet.binancefuture.com
-
+```
 Ensure:
 
 Futures trading permission is enabled
@@ -88,20 +84,27 @@ Futures trading permission is enabled
 No IP restrictions (for testing)
 
 ▶️ Usage Examples
-✅ MARKET Order
-python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.002
-✅ LIMIT Order
-python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.002 --price 70000
-✅ STOP (Conditional) Order (Bonus)
-python cli.py --symbol BTCUSDT --side SELL --type STOP --quantity 0.002 --price 63000 --stop_price 64000
 
-Explanation:
+✅ MARKET Order
+```
+python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.002
+```
+✅ LIMIT Order
+```
+python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.002 --price 70000
+```
+✅ STOP (Conditional) Order (Bonus)
+```
+python cli.py --symbol BTCUSDT --side SELL --type STOP --quantity 0.002 --price 63000 --stop_price 64000
+```
+#Explanation:
 
 stop_price = trigger price
 
 price = limit price placed after trigger
 
 📋 Example Outputs
+```
 MARKET / LIMIT Response
 ===== ORDER REQUEST =====
 Symbol: BTCUSDT
@@ -132,6 +135,7 @@ Executed Qty: 0.002
 Avg Price: N/A (Not triggered yet)
 
 ✅ Order executed successfully
+```
 
 Note:
 STOP orders return algoId and algoStatus instead of standard orderId and status.
@@ -154,8 +158,9 @@ API errors
 Unexpected exceptions
 
 Log format:
-
+```
 Timestamp | Level | Logger | Message
+```
 🧠 Design Decisions
 
 Clear separation of concerns:
@@ -187,11 +192,11 @@ Leverage not explicitly configured
 Minimum notional requirement enforced (>= 100 USDT)
 
 📦 Dependencies
-
+```
 python-binance
-
 python-dotenv
-
+```
 Install via:
-
+```
 pip install -r requirements.txt
+```
