@@ -1,0 +1,121 @@
+2026-02-21 20:18:57,117 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 20:18:57,118 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-02-21 20:18:57,118 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-02-21 20:18:57,518 | ERROR | bot.client | Binance API error: Invalid API-key, IP, or permissions for action
+2026-02-21 20:18:57,518 | ERROR | __main__ | Execution failed: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2026-02-21 20:27:33,715 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 20:27:33,717 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-02-21 20:27:33,719 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-02-21 20:27:34,094 | ERROR | bot.client | Binance API error: Invalid API-key, IP, or permissions for action
+2026-02-21 20:27:34,094 | ERROR | __main__ | Execution failed: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2026-02-21 20:28:21,933 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 20:28:21,933 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 50000.0, 'timeInForce': 'GTC'}
+2026-02-21 20:28:21,933 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 50000.0, 'timeInForce': 'GTC'}
+2026-02-21 20:28:22,327 | ERROR | bot.client | Binance API error: Invalid API-key, IP, or permissions for action
+2026-02-21 20:28:22,327 | ERROR | __main__ | Execution failed: APIError(code=-2015): Invalid API-key, IP, or permissions for action
+2026-02-21 20:31:34,857 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 20:31:34,857 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-02-21 20:31:34,857 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-02-21 20:31:35,259 | ERROR | bot.client | Binance API error: Order's notional must be no smaller than 100 (unless you choose reduce only).
+2026-02-21 20:31:35,259 | ERROR | __main__ | Execution failed: APIError(code=-4164): Order's notional must be no smaller than 100 (unless you choose reduce only).
+2026-02-21 20:31:52,530 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 20:31:52,531 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 50000.0, 'timeInForce': 'GTC'}
+2026-02-21 20:31:52,531 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 50000.0, 'timeInForce': 'GTC'}
+2026-02-21 20:31:52,889 | ERROR | bot.client | Binance API error: Limit price can't be lower than 65005.39.
+2026-02-21 20:31:52,890 | ERROR | __main__ | Execution failed: APIError(code=-4024): Limit price can't be lower than 65005.39.
+2026-02-21 20:32:07,459 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 20:32:07,460 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 70000.0, 'timeInForce': 'GTC'}
+2026-02-21 20:32:07,460 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 70000.0, 'timeInForce': 'GTC'}
+2026-02-21 20:32:07,843 | ERROR | bot.client | Binance API error: Order's notional must be no smaller than 100 (unless you choose reduce only).
+2026-02-21 20:32:07,843 | ERROR | __main__ | Execution failed: APIError(code=-4164): Order's notional must be no smaller than 100 (unless you choose reduce only).
+2026-02-21 20:33:28,151 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 20:33:28,152 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.002}
+2026-02-21 20:33:28,153 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.002}
+2026-02-21 20:33:28,560 | INFO | bot.client | Received response: {'orderId': 12442900015, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ29f560297088fa8e631a2e', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.002', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1771686210067}
+2026-02-21 20:33:39,486 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 20:33:39,487 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.002, 'price': 70000.0, 'timeInForce': 'GTC'}
+2026-02-21 20:33:39,487 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.002, 'price': 70000.0, 'timeInForce': 'GTC'}
+2026-02-21 20:33:39,897 | INFO | bot.client | Received response: {'orderId': 12442902524, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ5067393b5ea5c634219a07', 'price': '70000.00', 'avgPrice': '0.00', 'origQty': '0.002', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1771686221399}
+2026-02-21 21:06:01,387 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 21:06:01,387 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 68000.0, 'stopPrice': 69000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:06:01,388 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 68000.0, 'stopPrice': 69000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:06:01,769 | ERROR | bot.client | Binance API error: Order would immediately trigger.
+2026-02-21 21:06:01,769 | ERROR | __main__ | Execution failed: APIError(code=-2021): Order would immediately trigger.
+2026-02-21 21:06:33,379 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 21:06:33,380 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 68000.0, 'stopPrice': 69000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:06:33,381 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 68000.0, 'stopPrice': 69000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:06:33,780 | ERROR | bot.client | Binance API error: Order would immediately trigger.
+2026-02-21 21:06:33,781 | ERROR | __main__ | Execution failed: APIError(code=-2021): Order would immediately trigger.
+2026-02-21 21:06:53,141 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 21:06:53,142 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 68000.0, 'stopPrice': 70000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:06:53,142 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 68000.0, 'stopPrice': 70000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:06:53,545 | ERROR | bot.client | Binance API error: Order would immediately trigger.
+2026-02-21 21:06:53,546 | ERROR | __main__ | Execution failed: APIError(code=-2021): Order would immediately trigger.
+2026-02-21 21:07:04,015 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 21:07:04,015 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 68000.0, 'stopPrice': 75000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:07:04,016 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 68000.0, 'stopPrice': 75000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:07:04,376 | ERROR | bot.client | Binance API error: Limit price can't be lower than 71250
+2026-02-21 21:07:04,377 | ERROR | __main__ | Execution failed: APIError(code=-4184): Limit price can't be lower than 71250
+2026-02-21 21:07:22,200 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 21:07:22,200 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 68000.0, 'stopPrice': 71250.0, 'timeInForce': 'GTC'}
+2026-02-21 21:07:22,200 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 68000.0, 'stopPrice': 71250.0, 'timeInForce': 'GTC'}
+2026-02-21 21:07:22,823 | ERROR | bot.client | Binance API error: Order would immediately trigger.
+2026-02-21 21:07:22,823 | ERROR | __main__ | Execution failed: APIError(code=-2021): Order would immediately trigger.
+2026-02-21 21:07:31,458 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 21:07:31,460 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 68000.0, 'stopPrice': 75000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:07:31,460 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 68000.0, 'stopPrice': 75000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:07:31,824 | ERROR | bot.client | Binance API error: Limit price can't be lower than 71250
+2026-02-21 21:07:31,825 | ERROR | __main__ | Execution failed: APIError(code=-4184): Limit price can't be lower than 71250
+2026-02-21 21:08:03,864 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 21:08:03,865 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 71250.0, 'stopPrice': 75000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:08:03,865 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 71250.0, 'stopPrice': 75000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:08:04,244 | ERROR | bot.client | Binance API error: Order would immediately trigger.
+2026-02-21 21:08:04,245 | ERROR | __main__ | Execution failed: APIError(code=-2021): Order would immediately trigger.
+2026-02-21 21:08:14,343 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 21:08:14,343 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 71250.0, 'stopPrice': 79000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:08:14,343 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 71250.0, 'stopPrice': 79000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:08:14,739 | ERROR | bot.client | Binance API error: Limit price can't be lower than 75050
+2026-02-21 21:08:14,739 | ERROR | __main__ | Execution failed: APIError(code=-4184): Limit price can't be lower than 75050
+2026-02-21 21:08:23,157 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 21:08:23,158 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 71250.0, 'stopPrice': 76000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:08:23,159 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 71250.0, 'stopPrice': 76000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:08:23,567 | ERROR | bot.client | Binance API error: Limit price can't be lower than 72200
+2026-02-21 21:08:23,567 | ERROR | __main__ | Execution failed: APIError(code=-4184): Limit price can't be lower than 72200
+2026-02-21 21:08:36,959 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 21:08:36,961 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 71250.0, 'stopPrice': 75500.0, 'timeInForce': 'GTC'}
+2026-02-21 21:08:36,961 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 71250.0, 'stopPrice': 75500.0, 'timeInForce': 'GTC'}
+2026-02-21 21:08:37,307 | ERROR | bot.client | Binance API error: Limit price can't be lower than 71725
+2026-02-21 21:08:37,309 | ERROR | __main__ | Execution failed: APIError(code=-4184): Limit price can't be lower than 71725
+2026-02-21 21:08:47,403 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 21:08:47,404 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 71250.0, 'stopPrice': 75100.0, 'timeInForce': 'GTC'}
+2026-02-21 21:08:47,404 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 71250.0, 'stopPrice': 75100.0, 'timeInForce': 'GTC'}
+2026-02-21 21:08:47,790 | ERROR | bot.client | Binance API error: Limit price can't be lower than 71345
+2026-02-21 21:08:47,790 | ERROR | __main__ | Execution failed: APIError(code=-4184): Limit price can't be lower than 71345
+2026-02-21 21:08:56,389 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 21:08:56,390 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 71250.0, 'stopPrice': 74100.0, 'timeInForce': 'GTC'}
+2026-02-21 21:08:56,390 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 71250.0, 'stopPrice': 74100.0, 'timeInForce': 'GTC'}
+2026-02-21 21:08:56,779 | ERROR | bot.client | Binance API error: Order would immediately trigger.
+2026-02-21 21:08:56,780 | ERROR | __main__ | Execution failed: APIError(code=-2021): Order would immediately trigger.
+2026-02-21 21:09:03,703 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 21:09:03,704 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 71250.0, 'stopPrice': 74900.0, 'timeInForce': 'GTC'}
+2026-02-21 21:09:03,704 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 71250.0, 'stopPrice': 74900.0, 'timeInForce': 'GTC'}
+2026-02-21 21:09:04,089 | ERROR | bot.client | Binance API error: Order would immediately trigger.
+2026-02-21 21:09:04,089 | ERROR | __main__ | Execution failed: APIError(code=-2021): Order would immediately trigger.
+2026-02-21 21:09:11,759 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 21:09:11,760 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 71250.0, 'stopPrice': 75000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:09:11,760 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 71250.0, 'stopPrice': 75000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:09:12,150 | ERROR | bot.client | Binance API error: Order would immediately trigger.
+2026-02-21 21:09:12,150 | ERROR | __main__ | Execution failed: APIError(code=-2021): Order would immediately trigger.
+2026-02-21 21:09:24,601 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 21:09:24,601 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 68000.0, 'stopPrice': 69000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:09:24,602 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 68000.0, 'stopPrice': 69000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:09:24,987 | ERROR | bot.client | Binance API error: Order would immediately trigger.
+2026-02-21 21:09:24,988 | ERROR | __main__ | Execution failed: APIError(code=-2021): Order would immediately trigger.
+2026-02-21 21:10:33,899 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 21:10:33,899 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 63000.0, 'stopPrice': 64000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:10:33,899 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 63000.0, 'stopPrice': 64000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:10:34,305 | INFO | bot.client | Received response: {'algoId': 1000000015703797, 'clientAlgoId': 'x-Cb7ytekJ6a7a553c2712da0265f756', 'algoType': 'CONDITIONAL', 'orderType': 'STOP', 'symbol': 'BTCUSDT', 'side': 'SELL', 'positionSide': 'BOTH', 'timeInForce': 'GTC', 'quantity': '0.002', 'algoStatus': 'NEW', 'triggerPrice': '64000.00', 'price': '63000.00', 'icebergQuantity': None, 'selfTradePreventionMode': 'EXPIRE_MAKER', 'workingType': 'CONTRACT_PRICE', 'priceMatch': 'NONE', 'closePosition': False, 'priceProtect': False, 'reduceOnly': False, 'createTime': 1771688436186, 'updateTime': 1771688436194, 'triggerTime': 0, 'goodTillDate': 0}
+2026-02-21 21:13:42,055 | INFO | bot.client | Binance Futures Testnet client initialized.
+2026-02-21 21:13:42,483 | INFO | bot.orders | Order parameters constructed: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 63000.0, 'stopPrice': 64000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:13:42,483 | INFO | bot.client | Sending order to Binance: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP', 'quantity': 0.002, 'price': 63000.0, 'stopPrice': 64000.0, 'timeInForce': 'GTC'}
+2026-02-21 21:13:42,641 | INFO | bot.client | Received response: {'algoId': 1000000015704255, 'clientAlgoId': 'x-Cb7ytekJd8daacbf54fccf7b848f04', 'algoType': 'CONDITIONAL', 'orderType': 'STOP', 'symbol': 'BTCUSDT', 'side': 'SELL', 'positionSide': 'BOTH', 'timeInForce': 'GTC', 'quantity': '0.002', 'algoStatus': 'NEW', 'triggerPrice': '64000.00', 'price': '63000.00', 'icebergQuantity': None, 'selfTradePreventionMode': 'EXPIRE_MAKER', 'workingType': 'CONTRACT_PRICE', 'priceMatch': 'NONE', 'closePosition': False, 'priceProtect': False, 'reduceOnly': False, 'createTime': 1771688624525, 'updateTime': 1771688624529, 'triggerTime': 0, 'goodTillDate': 0}
